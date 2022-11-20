@@ -1,0 +1,72 @@
+.chat {
+  display: flex;
+  min-height: 100vh;
+  &__users-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-shrink: 0;
+    width: 270px;
+    border-right: 1px solid rgba($black, 0.1);
+    &__title {
+      padding: 8px;
+      border-bottom: 1px solid rgba($black, 0.1);
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      padding: 8px;
+      border-bottom: 1px solid rgba($black, 0.1);
+      &:hover {
+        background: $light-gray;
+        cursor: pointer;
+      }
+      &__info {
+        &__name {
+          font-size: 14px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  &__main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__header {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      border-bottom: 1px solid rgba($black, 0.1);
+      .header {
+        &__title {
+          font-size: 28px;
+          line-height: 120%;
+          font-family: "Rubik Distressed", serif;
+          margin-right: auto;
+        }
+        &__logout {
+          border-radius: 6px;
+          background: $black;
+          color: #fff;
+          padding: 8px 40px;
+          font-size: 16px;
+          font-family: "Rubik", serif;
+          font-weight: 500;
+          &:hover {
+            filter: brightness(0.8);
+          }
+        }
+      }
+    }
+    &__messages {
+      margin-top: auto;
+      overflow-y: scroll;
+      width: 100%;
+      max-height: calc(100vh - 104px);
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

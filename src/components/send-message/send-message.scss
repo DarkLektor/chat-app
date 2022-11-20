@@ -1,0 +1,28 @@
+.send-message {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px;
+  .send-message {
+    &__input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid rgba($black, 0.1);
+      margin-right: 8px;
+      border-radius: 6px;
+      font-family: "Rubik", serif;
+    }
+    &__btn {
+      border-radius: 6px;
+      background: $black;
+      color: #fff;
+      padding: 8px 32px;
+      font-size: 16px;
+      font-family: "Rubik", serif;
+      flex-shrink: 0;
+      font-weight: 500;
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+}
