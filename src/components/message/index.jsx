@@ -10,7 +10,7 @@ export default function Message({ message }) {
   return (
     <div className={`message ${fromTo}`}>
       <img
-        src={message.userImg || "/src/assets/images/default-user.png"}
+        src={message.userImg || "/images/default-user.png"}
         alt="user avatar"
         className="message__user-avatar"
       />
