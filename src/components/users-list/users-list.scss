@@ -1,0 +1,59 @@
+.users-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-shrink: 0;
+  width: 270px;
+  max-height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid rgba($black, 0.1);
+  &__title {
+    padding: 8px;
+    border-bottom: 1px solid rgba($black, 0.1);
+  }
+  &__header-img {
+    display: none;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    padding: 8px;
+    border-bottom: 1px solid rgba($black, 0.1);
+    &:hover {
+      background: $light-gray;
+      cursor: pointer;
+    }
+    &__info {
+      &__name {
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+    }
+    &__avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .users-list {
+    width: unset;
+    &__title {
+      display: none;
+    }
+    &__header-img {
+      display: block;
+      width: 32px;
+      height: 32px;
+      margin: 8px auto;
+    }
+    .user__info {
+      display: none;
+    }
+  }
+}

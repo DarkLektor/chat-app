@@ -32,7 +32,7 @@ export default function SendMessage() {
         onChange={(e) => setInputText(e.target.value)}
       />
       <button type="submit" className="send-message__btn">
-        Отправить
+        <img src="/src/assets/images/send.png" alt="send message" />
       </button>
     </form>
   );

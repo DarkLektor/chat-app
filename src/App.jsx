@@ -14,11 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      {user?.email ? (
-        <Home user={user} />
-      ) : (
-        <Login signIn={() => googleSignIn()} />
-      )}
+      {user?.email ? <Home /> : <Login signIn={() => googleSignIn()} />}
     </div>
   );
 }
