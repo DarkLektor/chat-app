@@ -17,7 +17,7 @@ echo > .nojekyll
 
 git init
 git checkout -B main
-git add -A
+git add '/dist'
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
