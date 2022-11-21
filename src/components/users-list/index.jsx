@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./users-list.scss";
 
 export default function UsersList({ users }) {
@@ -7,7 +7,7 @@ export default function UsersList({ users }) {
       <h3 className="users-list__title">Список пользователей</h3>
       <img
         className="users-list__header-img"
-        src="/images/group.png"
+        src="images/group.png"
         alt="users"
       />
 
@@ -15,7 +15,7 @@ export default function UsersList({ users }) {
         return user.isOnline ? (
           <div className="user" key={user.uid}>
             <img
-              src={user.userImg || "/images/default-user.png"}
+              src={user.userImg || "images/default-user.png"}
               alt="user avatar"
               className="user__avatar"
               title={user.userName}

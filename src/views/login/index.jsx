@@ -11,7 +11,7 @@ export default function Login({ signIn }) {
         </h1>
         <button className="login__btn" onClick={signIn}>
           <span>Войти</span>
-          <img src="/images/google.svg" alt="google" />
+          <img src="images/google.svg" alt="google" />
         </button>
       </div>
     </div>
